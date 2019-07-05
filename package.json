@@ -1,0 +1,31 @@
+{
+  "name": "reactjs_helloworld",
+  "version": "1.0.0",
+  "description": "reactjs intro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ] src/js/index.js -o static/dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Verdyevan/reactjs_helloworld.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Verdyevan/reactjs_helloworld/issues"
+  },
+  "homepage": "https://github.com/Verdyevan/reactjs_helloworld#readme",
+  "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^10.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "@babel/preset-react": "^7.0.0"
+  }
+}
